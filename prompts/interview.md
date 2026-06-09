@@ -43,10 +43,19 @@ Based on target role, ask from `knowledge/interview_knowledge.md`:
 - DSA problem appropriate for level
 - ML-specific coding (implement a metric, write a data pipeline)
 
-### Round 4: System Design (15 min, Mid+ only)
+### Round 4: System Design (15 min, scaled by level)
+
+**Intern/Junior:** Lighter system design — focus on component selection and tradeoffs
+- Design a simple ML inference API
+- How would you structure a RAG pipeline?
+
+**Mid:** Full system design with scale considerations
 - Design a real-time recommendation system
-- Design an image moderation pipeline
-- Design a document Q&A system
+- Design a document Q&A system with evaluation
+
+**Senior:** Complex distributed systems with cost/reliability tradeoffs
+- Design an image moderation pipeline at scale
+- Design a multi-tenant LLM gateway with model routing
 
 ### Round 5: Behavioral (10 min)
 - Tell me about a time you failed

@@ -93,3 +93,61 @@
 | Metrics | None | Accuracy, latency, scale, impact |
 | Impact | Not mentioned | Quantified business/technical impact |
 | Scale | Not mentioned | Dataset size, users, throughput |
+
+---
+
+## ATS Optimization Examples — Keyword Preservation
+
+### ❌ BAD Optimization (Drops ATS Score)
+
+**Original bullet:**
+> Built a face recognition attendance system using OpenCV and KNN, achieving 96% accuracy on 500+ samples.
+
+**Bad rewrite:**
+> Orchestrated an advanced biometric verification solution leveraging cutting-edge computer vision algorithms, delivering superior recognition performance across hundreds of facial samples.
+
+**Why BAD:**
+- Dropped keywords: "OpenCV", "KNN", "96%", "500+"
+- Replaced exact tools with vague descriptions
+- ATS searching for "OpenCV" or "KNN" will NOT find this resume
+- Score DECREASED despite sounding "fancier"
+
+### ✅ GOOD Optimization (Boosts ATS Score)
+
+**Original bullet:**
+> Built a face recognition attendance system using OpenCV and KNN, achieving 96% accuracy on 500+ samples.
+
+**Good rewrite:**
+> Engineered a real-time face recognition attendance system using OpenCV, KNN, and Python, achieving 96% validation accuracy across 500+ facial samples while reducing manual attendance processing time by 90%.
+
+**Why GOOD:**
+- ALL original keywords preserved: OpenCV, KNN, 96%, 500+
+- Keywords ADDED: "Python", "real-time", "validation accuracy"
+- Metric ADDED: "90% processing time reduction"
+- Action verb upgraded: "Built" → "Engineered"
+- ATS score INCREASED
+
+### ❌ BAD: Skills-Only Keyword Placement
+
+```
+Skills: PyTorch, Docker, FastAPI, RAG, LangChain
+
+Projects:
+• Built a chatbot that answers questions from documents
+• Made an image classifier with good accuracy
+```
+
+**Problem:** Keywords only in Skills section. Project bullets have zero keyword matches. ATS scores this LOW.
+
+### ✅ GOOD: Multi-Placement Keywords
+
+```
+Skills: PyTorch, Docker, FastAPI, RAG, LangChain
+
+Projects:
+• Architected a RAG-based document Q&A chatbot using LangChain and ChromaDB, deployed via FastAPI and Docker, serving 10K+ queries/month
+• Built a PyTorch image classification model achieving 94% accuracy on a custom 15K-image dataset, with REST API via FastAPI
+```
+
+**Why GOOD:** Every keyword from Skills also appears in context inside bullets. ATS ranks this MUCH higher.
+
