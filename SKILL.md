@@ -67,11 +67,22 @@ Each command maps to specific knowledge files, rubrics, and prompts. Always load
 
 **Load:**
 - `prompts/ats_review.md` — ATS compatibility analysis
+- `prompts/keyword_analysis.md` — keyword gap analysis
 - `prompts/resume_rewrite.md` — bullet rewriting process
 - `rubrics/ai_resume_rubric.md` — scoring criteria
 - `knowledge/resume_best_practices.md` — writing rules and formulas
 - `knowledge/ai_ml_keywords.md` — keywords to incorporate
 - `examples/good_resume_example.md` — weak vs strong demonstrations
+
+**Execution Order (MANDATORY — follow in sequence):**
+
+1. **Baseline ATS Score** — Run `prompts/ats_review.md` on the ORIGINAL resume. Record the score. This is the floor — the optimized resume must score ≥ this.
+2. **Keyword Gap Analysis** — Run `prompts/keyword_analysis.md` to identify present keywords, missing keywords, and priority gaps.
+3. **Rewrite with Preservation** — Run `prompts/resume_rewrite.md`, feeding it the keyword inventory and gap analysis from Steps 1–2. The rewrite MUST preserve all existing matched keywords and incorporate missing ones.
+4. **Post-Rewrite ATS Verification** — Re-run `prompts/ats_review.md` on the REWRITTEN resume. Compare against the baseline from Step 1.
+5. **Score Gate** — If the new ATS score is LOWER than the baseline, identify which keywords were lost, restore them, and repeat Steps 3–4 until ATS score ≥ baseline.
+
+**Output must include:** Before/After ATS score comparison, keyword preservation report, and keyword additions list.
 
 ---
 
