@@ -1,5 +1,7 @@
 # 🚀 Career Copilot — AI/ML Career Operating System
-
+![Topics](https://img.shields.io/badge/prompt--engineering-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Updated](https://img.shields.io/badge/updated-June%202026-brightgreen)
 > **Last Updated:** June 2026
 
 A comprehensive AI Skill for AI/ML career optimization. ATS analysis with keyword preservation, resume optimization, keyword research, GitHub review, LinkedIn review, project evaluation, interview preparation, market fit analysis, and career readiness scoring — all updated to the June 2026 AI/ML landscape.
